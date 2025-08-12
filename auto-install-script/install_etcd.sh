@@ -68,7 +68,6 @@ EOF
 
 echo "[INFO] Перезагружаем systemd и включаем etcd..."
 sudo systemctl daemon-reload
-sudo systemctl enable etcd
 
 echo "[INFO] Проверяем версию etcd:"
 etcd --version
