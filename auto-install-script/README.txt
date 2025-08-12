@@ -7,9 +7,9 @@
 - kubectl
 - kubelet
 - ETCD
-- Docker/Containerd.io
+- Containerd.io
 
-HOW TO USE:
+HOW TO 
 cd /var/tmp/  &&
 git clone https://github.com/wolfuk1/Kubernetes-1.33.3-kubeadm_auto_install.git &&
 cd Kubernetes-1.33.3-kubeadm_auto_install/auto-install-script/ &&
