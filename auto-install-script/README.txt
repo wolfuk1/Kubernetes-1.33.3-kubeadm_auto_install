@@ -12,8 +12,8 @@
 HOW TO USE:
 cd /var/tmp/  &&
 git clone https://github.com/wolfuk1/Kubernetes-1.33.3-kubeadm_auto_install.git &&
-cd Kubernetes-1.33.3-kubeadm_auto_install/auto-install-script/
-chmod +x *.sh
+cd Kubernetes-1.33.3-kubeadm_auto_install/auto-install-script/ &&
+chmod +x *.sh &&
 ./install_k8s_cluster.sh
 
 Завершение установки:
