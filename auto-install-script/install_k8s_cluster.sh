@@ -17,7 +17,7 @@ echo "[INFO] Запускаем настройку iptables..."
 
 # Установка Docker/containerd
 echo "[INFO] Запускаем установку Docker и containerd..."
-./install_container_runtime.sh
+./install_docker_containerd.sh
 
 # Установка компонентов K8S
 echo "[INFO] Запускаем установку компонентов Kubernetes..."
