@@ -12,9 +12,9 @@
 HOW TO 
 cd /var/tmp/  &&
 git clone https://github.com/wolfuk1/Kubernetes-1.33.3-kubeadm_auto_install.git &&
-cd Kubernetes-1.33.3-kubeadm_auto_install/auto-install-script/ &&
+cd Kubernetes-1.33.3-kubeadm_auto_install/auto-install-master-script/ &&
 chmod +x *.sh &&
-./install_k8s_cluster.sh
+./install_master_node.sh
 
 Завершение установки:
 --- Добавьте ip мастер-нод в /etc/etcd/etcd.conf
@@ -28,7 +28,7 @@ chmod +x *.sh &&
 	sudo chown $(id -u):$(id -g) $HOME/.kube/config
 --- Переносим ключи /etc/kubernetes/pki* на вторую ноду в эту же папку:
 	scp -r /etc/kubernetes/pki master2:/etc/kubernetes
---- Инициализируем второй кластер через kubeadm join:
+--- Инициализируем второй-третью мастер-ноду через kubeadm join:
 	(текст который у нас появился при инициализации):
 	kubeadm join ip-address-node1:6443 --token 3n*.fz* \
         --discovery-token-ca-cert-hash sha256:ccba**** \
